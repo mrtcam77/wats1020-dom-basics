@@ -3,7 +3,14 @@
 html {
     text-align: center;
     padding: 2em;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ECE3C1;
+    background-image: url("fortune-cookie.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+li{
+    list-style-type: none;
 }
 
 .fortune-cookie-saying-wrapper {

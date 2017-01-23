@@ -1,29 +1,47 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Fortune Cookie Generator</title>
-        <meta name="description" content="This page generates fortune cookie sayings.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="main.css">
-        <script type="text/javascript" src="fortune-cookie-generator.js"></script>
-    </head>
-    <body>
-        <h1>Fortune Cookie Generator</h1>
-        <p>Use this page to generate fortune cookie sayings.</p>
-        <div class="fortune-cookie-saying-wrapper">
-            <p id="fortune-cookie-text">Click the button to generate a saying.</p>
-        </div>
-        <!-- TODO: Make this button execute the `generateFortuneCookie()` function. -->
-        <button class="generate-button">
-            Make My Fortune!
-        </button>
-        <hr>
-        <h2>Previous Fortunes</h2>
-        <ul id="previous-fortunes-container">
-        <!-- TODO: Modify javascript so previously generated fortunes are listed here. -->
-        </ul>
-    </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Fortune Cookie Generator</title>
+  <meta name="description" content="This page generates fortune cookie sayings.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="main.css">
+  <script type="text/javascript" src="fortune-cookie-generator.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+  <h1>Want to know your future?</h1>
+  <p>Learn your fortune, no takeout necessary.</p>
+    <div class="fortune-cookie-saying-wrapper">
+    <p id="fortune-cookie-text">Click the button to generate a saying.</p>
+  </div>
+          <p><a class="btn btn-primary btn-lg" onclick="generateFortuneCookie()" role="button">Tell Me My Future!</a></p>
+</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+    <h2>Previous Fortunes</h2>
+    <ul id="previous-fortunes-container">
+      <!-- TODO: Modify javascript so previously generated fortunes are listed here. -->
+    </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
